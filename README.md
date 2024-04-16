@@ -61,7 +61,7 @@ Natal: 31 de dezembro de 2019, 30 de dezembro de 2020, 28 de dezembro de 2021, 2
 </p>
 </p>
 </p>
-<b><s>  Exemplos de Prompts  </b></s>s>
+<b> Exemplos de Prompts  </b>
 </p>
 </p>
 
@@ -71,3 +71,5 @@ Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size
 </p>
 </p>
 
+Realize a análise de tendência de vendas por semana considerando a variação do CPI, com python para ser executado no Google Colab do arquivo em https://raw.githubusercontent.com/vitormariath/Amazon-UK-Sales-Data-Set/main/amazon_sales_dataset_2020-21.csv. 
+# Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size,Temperature,Fuel_Price,CPI,Unemployment,IsHoliday,Year,Month,Week,max,min,mean,median,std,Total_MarkDown

@@ -72,4 +72,41 @@ Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size
 </p>
 
 Realize a análise de tendência de vendas por semana considerando a variação do CPI, com python para ser executado no Google Colab do arquivo em https://raw.githubusercontent.com/vitormariath/Amazon-UK-Sales-Data-Set/main/amazon_sales_dataset_2020-21.csv. 
-# Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size,Temperature,Fuel_Price,CPI,Unemployment,IsHoliday,Year,Month,Week,max,min,mean,median,std,Total_MarkDown
+Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size,Temperature,Fuel_Price,CPI,Unemployment,IsHoliday,Year,Month,Week,max,min,mean,median,std,Total_MarkDown
+</p>
+</p>
+Código:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+plt.rcParams['xtick.labelsize'] = 8
+
+#3. Carregue o conjunto de dados a partir do arquivo fornecido:
+
+url = 'https://raw.githubusercontent.com/vitormariath/Amazon-UK-Sales-Data-Set/main/amazon_sales_dataset_2020-21.csv'
+df = pd.read_csv(url)
+
+#4. Converta a coluna 'Date' para o tipo de dados datetime e defina-a como o índice do DataFrame:
+df['Date'] = pd.to_datetime(df['Date'])
+df.set_index('Date', inplace=True)
+
+#5. Agrupe os dados por semana e calcule a média das vendas semanais e do CPI:
+weekly_sales_cpi = df.resample('W').agg({'Weekly_Sales': 'mean', 'CPI': 'mean'})
+
+#6. Visualize a tendência das vendas por semana considerando a variação do CPI:
+fig, ax1 = plt.subplots()
+
+color = 'tab:red'
+ax1.set_xlabel('Week')
+ax1.set_ylabel('Weekly Sales', color=color)
+ax1.plot(weekly_sales_cpi.index, weekly_sales_cpi['Weekly_Sales'], color=color)
+ax1.tick_params(axis='y', labelcolor=color)
+
+ax2 = ax1.twinx()  
+color = 'tab:blue'
+ax2.set_ylabel('CPI', color=color)  
+ax2.plot(weekly_sales_cpi.index, weekly_sales_cpi['CPI'], color=color)
+ax2.tick_params(axis='y', labelcolor=color)
+
+fig.tight_layout()  
+plt.show()

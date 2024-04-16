@@ -75,7 +75,7 @@ Realize a análise de tendência de vendas por semana considerando a variação 
 Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size,Temperature,Fuel_Price,CPI,Unemployment,IsHoliday,Year,Month,Week,max,min,mean,median,std,Total_MarkDown
 </p>
 </p>
-Código:
+<b>Código no Google Colab</b>
 
 import pandas as pd
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-DESCRIPTION
+# Formato do Arquivo
 The DataSet contains historical sales data for 45 Amazon stores located in different regions.
 SUMMARY
 Dataset Description
@@ -61,7 +61,7 @@ Natal: 31 de dezembro de 2019, 30 de dezembro de 2020, 28 de dezembro de 2021, 2
 </p>
 </p>
 </p>
-<b> Exemplos de Prompts  </b>
+# Exemplos de Prompts
 </p>
 </p>
 

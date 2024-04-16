@@ -21,8 +21,11 @@ Unemployment - the unemployment rate
 For convenience, the four holidays fall within the following weeks in the dataset (not all holidays are in the data):
 
 Super Bowl: 12-Feb-19, 11-Feb-20, 10-Feb-21, 8-Feb-18
+
 Labor Day: 10-Sep-19, 9-Sep-20, 7-Sep-21, 6-Sep-18
+
 Thanksgiving: 26-Nov-19, 25-Nov-20, 23-Nov-21, 29-Nov-18
+
 Christmas: 31-Dec-19, 30-Dec-20, 28-Dec-21, 27-Dec-18
 
 
@@ -54,3 +57,17 @@ Super Bowl: 12 de fevereiro de 2019, 11 de fevereiro de 2020, 10 de fevereiro de
 Dia do Trabalho: 10 de setembro de 2019, 9 de setembro de 2020, 7 de setembro de 2021, 6 de setembro de 2018
 Ação de Graças: 26 de novembro de 2019, 25 de novembro de 2020, 23 de novembro de 2021, 29 de novembro de 2018
 Natal: 31 de dezembro de 2019, 30 de dezembro de 2020, 28 de dezembro de 2021, 27 de dezembro de 2018"
+</p>
+</p>
+</p>
+</p>
+<b><s>  Exemplos de Prompts  </b></s>s>
+</p>
+</p>
+
+  Quais são os insights sobre padrões observados nos dados do arquivo https://raw.githubusercontent.com/vitormariath/Amazon-UK-Sales-Data-Set/main/amazon_sales_dataset_2020-21.csv.
+Demonstre previões com base em tendências atuais e explore hipoteses.
+Sendo que as variáveis do arquivo são: Date,Store,Dept,,Weekly_Sales,Type,Size,Temperature,Fuel_Price,CPI,Unemployment,IsHoliday,Year,Month,Week,max,min,mean,median,std,Total_MarkDown
+</p>
+</p>
+
